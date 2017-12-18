@@ -2,7 +2,7 @@
 #include <omp.h>
  
 int main() {
-    int total = omp_get_num_threads();
+    int total = omp_get_max_threads();
     #pragma omp parallel
     {
         int id = omp_get_thread_num();
